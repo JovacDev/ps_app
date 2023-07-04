@@ -1,0 +1,16 @@
+ion-title {
+    text-align: center;
+    font-weight: bold;
+    margin-right: 50px;
+}
+ion-toggle {
+    --background: #4e4c4c;
+    --background-checked: #a3e4d7;
+    --handle-height: 20px;
+    --handle-width: 20px;
+}
+
+ion-button {
+    margin-left: auto;
+    margin-right: auto;
+}

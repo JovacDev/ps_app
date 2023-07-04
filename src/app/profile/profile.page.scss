@@ -1,0 +1,35 @@
+ion-header {
+  height: 15%;
+}
+
+ion-row {
+  margin-top: 5%;
+}
+
+ion-title {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+ion-label {
+  color: black;
+  font-weight: bold;
+}
+
+ion-toggle {
+  --background: #4e4c4c;
+  --background-checked: #a3e4d7;
+  --handle-height: 20px;
+  --handle-width: 20px;
+}
+
+ion-item {
+  position: relative;
+  border-color: white;
+}
+
+ion-button {
+  margin-left: auto;
+  margin-right: auto;
+}

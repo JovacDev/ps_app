@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="bluishgreen">
+    <ion-title>Perfil</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" icon="/assets/arrows.svg" defaultHref="maps" style="font-weight: bold;"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-item>
+    <ion-icon src="/assets/editUser.svg"></ion-icon>
+    <ion-label style="margin-left: 10px;">Editar perfil</ion-label>
+    <ion-toggle id="reload" Unchecked="check" (ionChange)="checkChange($event)" unchecked></ion-toggle>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col size="12">
+      <ion-item>
+        <ion-icon src="/assets/id-card.svg"></ion-icon>
+        <ion-label position="floating">Nombre Usuario</ion-label>
+        <ion-input [(ngModel)]="username" [disabled]="!check"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <ion-item>
+        <ion-icon src="/assets/mail.svg"></ion-icon>
+        <ion-label position="floating">Correo electronico</ion-label>
+        <ion-input [(ngModel)]="email" disabled></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <ion-item>
+        <ion-icon src="/assets/padlock.svg"></ion-icon>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="password" [disabled]="!check"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <ion-item>
+        <ion-icon src="/assets/padlock.svg"></ion-icon>
+        <ion-label position="floating">Confirmar contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="confirmPassword" [disabled]="!check"
+        ></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-button type="submit" expand="block" color="dark" (click)="updateUser()">Actualizar perfil</ion-button>
+  </ion-row>
+</ion-content>

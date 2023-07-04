@@ -1,0 +1,8 @@
+{
+  "name": "parkingslot_app",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

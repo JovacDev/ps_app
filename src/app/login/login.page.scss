@@ -1,0 +1,49 @@
+img {
+  width: 40%;
+  display: block;
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+ion-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+ion-toolbar {
+  color: black;
+}
+
+a {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  margin-top: 5%;
+}
+
+.buttonLogin {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+.buttonRegister {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+ion-content {
+  --ion-background-color: linear-gradient(#ffffff 60%, #a3e4d7);
+}
+
+ion-item {
+  src: url(../../assets/fonts/PermanentMarker-Regular.ttf);
+  font-family: PermanentMarker-Regular;
+  font-weight: bold;
+  --ion-background-color: white;
+}

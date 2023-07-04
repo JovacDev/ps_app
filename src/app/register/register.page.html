@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar id="hide" color="bluishgreen">
+    <!--ion-button color="light" (click)="dismissRegister()">Close</ion-button-->
+    <ion-title>Registro</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button icon="/assets/arrows.svg" defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img src="../../assets/sign-up.svg" alt="" *ngIf="showAndHide">
+</ion-header>
+<ion-content padding>
+  <form #form="ngForm" (ngSubmit)="registerModelService(form)" method="post">
+    <ion-item>
+        <ion-label position="floating">Nombre Usuario</ion-label>
+        <ion-input ngModel name="username"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Correo electronico</ion-label>
+      <ion-input ngModel name="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" ngModel name="password"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Confirmar contraseña</ion-label>
+      <ion-input type="password" ngModel name="confirmPassword"></ion-input>
+    </ion-item>
+  
+    <ion-button class="buttonRegister" type="submit" expand="block" color="danger">Registro</ion-button>
+  </form>
+</ion-content> 
